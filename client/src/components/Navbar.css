@@ -23,3 +23,13 @@ nav ul li {
   cursor: pointer;
   font-size: 18px;
 }
+
+nav ul li a {
+  text-decoration: none;
+  color: white;   /* Agar navbar dark hai */
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #c8e6c9;
+}
