@@ -1,6 +1,6 @@
 .auth-page {
   min-height: calc(100vh - 72px);
-  padding: 60px 20px;
+  padding: 50px 20px;
 
   display: flex;
   align-items: center;
@@ -8,7 +8,7 @@
 
   background:
     radial-gradient(
-      circle at 20% 20%,
+      circle at 80% 20%,
       rgba(129, 199, 132, 0.18),
       transparent 35%
     ),
@@ -27,15 +27,19 @@
   box-shadow: var(--shadow-lg);
 }
 
+.signup-card {
+  max-width: 470px;
+}
+
 .auth-header {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   text-align: center;
 }
 
 .auth-icon {
   width: 58px;
   height: 58px;
-  margin: 0 auto 18px;
+  margin: 0 auto 16px;
 
   display: flex;
   align-items: center;
@@ -64,13 +68,13 @@
 .auth-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 17px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
 }
 
 .form-group label {
@@ -81,7 +85,7 @@
 
 .form-group input {
   width: 100%;
-  padding: 13px 14px;
+  padding: 12px 14px;
 
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -106,8 +110,22 @@
   box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
 }
 
+.auth-error {
+  margin: 0;
+  padding: 10px 12px;
+
+  border-radius: var(--radius-sm);
+
+  background: var(--color-error-bg);
+  color: var(--color-error);
+
+  font-size: 13px;
+  line-height: 1.4;
+}
+
 .auth-submit {
   width: 100%;
+  margin-top: 3px;
   padding: 13px;
 
   border: none;
@@ -131,7 +149,7 @@
 }
 
 .auth-footer {
-  margin-top: 24px;
+  margin-top: 22px;
 
   color: var(--color-secondary-text);
   font-size: 14px;
@@ -152,7 +170,7 @@
 
 @media (max-width: 500px) {
   .auth-page {
-    padding: 40px 16px;
+    padding: 35px 16px;
   }
 
   .auth-card {
